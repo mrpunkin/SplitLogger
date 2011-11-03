@@ -6,7 +6,7 @@ class SplitLogger < Logger
   def initialize(logdev, shift_age = 0, shift_size = 1048576)
     shift_age = shift_age
     shift_size = shift_size
-    super
+    super(logdev, shift_age, shift_size)
   end
   
   def add(severity, message = nil, progname = nil, &block)

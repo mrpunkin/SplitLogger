@@ -11,6 +11,7 @@ Simply require SplitLogger, initialize a new SplitLogger object as you would for
 **Your ruby file**:
 
 	require 'split_logger'
+	
 	log = SplitLogger.new("mylog.log")
 	log.level = Logger::ERROR
 	log.logs = {

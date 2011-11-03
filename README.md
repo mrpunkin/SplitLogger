@@ -1,14 +1,14 @@
 SplitLogger
 ===========
 
-SplitLogger is a simple subclass of the ruby Logger class designed to allow you to split certain log levels off to their own output.
+SplitLogger is a simple subclass of the ruby Logger class, designed to allow you to split certain log levels off to their own output.
 
 Usage
 -----------
 
 Simply require SplitLogger, initialize a new SplitLogger object as you would for Logger, set one additional option, and watch your multiple logs grow.
 
-** Your ruby file **
+**Your ruby file**:
 	require 'split_logger'
 	log = SplitLogger.new("mylog.log")
 	log.level = Logger::ERROR

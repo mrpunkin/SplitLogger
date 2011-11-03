@@ -18,7 +18,7 @@ Simply require SplitLogger, initialize a new SplitLogger object as you would for
 		"debug.log" => Logger::DEBUG
 	}
 
-Logging for all log levels not explicitly defined falls back to the default log level setting and output destination.
+Logging for all log levels which have not been explicitly defined falls back on the default log level setting and output destination.
 
 The logs attribute is a hash of output => level(s)
 
